@@ -8,11 +8,10 @@ const lostNumbersElement = document.getElementById("lost-numbers");
 const lostNumbers = [4, 8, 15, 16, 23, 42];
 
 //Return remainder
-function returnTheRemainder(num1, num2) {
-  return num1 % num2;
+function returnTheRemainder(5, 4) {
+  remainderElement.innerText = return num1 % num2;
 }
-let remainder = returnTheRemainder(5, 4);
-console.log(remainder)
+
 
 //Check if Even
 function checkIfEven(number) {
@@ -20,11 +19,21 @@ function checkIfEven(number) {
   return "True"
  } else {
   return "False"
- }
+ };
 }
-checkIfEven(47)
 
 //Fourth element
 function getTheFourthElement() {
-  lostNumbers[3]
+  lostNumbersElement.innerHTML = lostNumbers[3];
 }
+
+function render() {
+  returnTheRemainder();
+  checkIfEven();
+  getTheFourthElement();
+}
+
+submissionBtn.addEventListener("click", function () {
+  // Update this function
+  render();
+});
